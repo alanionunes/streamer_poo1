@@ -1,6 +1,8 @@
 package streamer_poo1;
 
-public class Filme {
+import streamer_poo1.DAO.FilmeDAO;
+
+public class Filme implements FilmeDAO {
 	
 	private String titulo;
 	private int ano;
@@ -65,5 +67,30 @@ public class Filme {
 		return "Titulo: " + titulo + " | Ano: " + ano + " | Diretor: " + diretor + " | Ator: " + ator + " | Genero: " + genero;
 	}
 
+	@Override
+	public Filme Criar() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Filme Pesquisar() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Filme Deletar() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Filme Atualizar() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
 		
 }

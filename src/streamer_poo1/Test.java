@@ -25,7 +25,7 @@ public class Test {
 
 		int n = 3;
 
-		// cadastro de filmes
+		//cadastro de filmes
 		Filme filme[] = new Filme[12];
 
 		filme[0] = new Filme("Titanic", 1997, "James Cameron", "Leonardo DiCaprio", "Romance");
@@ -41,7 +41,7 @@ public class Test {
 		filme[10] = new Filme("Shrek 2", 2017, "Adrew Adamson", "Mike Myers", "Animação");
 		filme[11] = new Filme("Central do Brasil", 1998, "Walter Salles", "Fernanda Montenegro", "Nacional");
 
-		// cadastro de clientes
+		//cadastro de clientes
 		Cliente cli1 = new Cliente(11, "Kayo Amorim", "Av. Bezerra de Menezes, 2021", sdf.parse("29/04/2021"));
 		Cliente cli2 = new Cliente(12, "Fernanda Santiago", "Av. Mister Hull, 2021", sdf.parse("19/04/2021"));
 		Cliente cli3 = new Cliente(13, "Vitor Alves", "Av. Washington Soares, 2021", sdf.parse("05/04/2021"));
@@ -139,10 +139,11 @@ public class Test {
 						cf++;
 						opcao = 6;
 					}
-					if (cf == 0) {
-						System.out.println("Filme nao encontrado. Refaça sua pesquisa.");
-						System.out.println();
-					}
+					
+				}
+				if (cf == 0) {
+					System.out.println("Filme nao encontrado. Refaça sua pesquisa.");
+					System.out.println();
 				}
 				break;
 
@@ -173,8 +174,9 @@ public class Test {
 						System.out.printf("\nFilme escolhido: O Rei Leão (Live Action)\nBom filme!\n");
 						break;
 					}
+					opcao = 6;
 				}
-				opcao = 6;
+				
 
 				if (ca == 0) {
 					System.out.println("Filme nao encontrado. Refaça sua pesquisa.");
